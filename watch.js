@@ -112,11 +112,17 @@ function displaySearchResults(results, type, container) {
         const itemLink = `/watch.html?id=${itemId}`;
 
         container.innerHTML += `
-            <div class="col-md-4 col-sm-6 col-lg-3 col-xl-2">
-                <img src="${posterPath}" alt="${title}" class="img-fluid rounded">
-                <a href="${itemLink}" class="d-block mt-2" data-bs-theme="dark">${title}</a>
-                <p class="text-muted">${type}</p>
-            </div>
+           <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <img src="${posterPath}" class="card-img-top img-fluid rounded" alt="${title}">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h6 class="card-title mb-2">${title}</h6>
+                        <p class="text-muted mb-3">${type}</p>
+                        <a href="${itemLink}" class="btn btn-primary btn-sm mt-auto">More Info</a>
+                    </div>
+                </div>
+           </div>
+
         `;
     });
 }

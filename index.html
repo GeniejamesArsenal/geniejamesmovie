@@ -26,11 +26,41 @@
 <!-- Search Form -->
 
 
-<div id="movie-list" class="row"></div>
-<div id="series-list" class="row"></div>
+<div class="container mt-4">
+    <!-- Carousel Section -->
+    <h2 class="text-white mb-4">Latest Movies</h2>
+    <div id="latest-movies-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-items">
+            <!-- Dynamic content will go here -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#latest-movies-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#latest-movies-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div>
+
+<!-- Grid Section -->
+<div class="container mt-4">
+    <h2 class="text-white mb-4">More Movies</h2>
+    <div id="movie-list" class="row p-2"></div>
+</div>
+
+
+<div class="container mt-4">
+    <h2 class="text-white mb-4">Series</h2>
+    <div id="series-list" class="row p-2"></div>
+</div>
+
 </body>
 <footer>
     <script src="index.js"></script>
-    <script src="lockinspect.js"></script>
 </footer>
-</html>
+</html>  
