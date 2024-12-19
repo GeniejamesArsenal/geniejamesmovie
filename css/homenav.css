@@ -1,0 +1,33 @@
+ nav {
+     background: rgba(255, 255, 255, 0.1);
+     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+     backdrop-filter: blur(2px);
+     -webkit-backdrop-filter: blur(2px);
+     border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+
+ a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+ }
+
+ a:hover {
+     color: brown;
+ }
+
+ input {
+     border: none;
+     background-color: transparent;
+     color: white;
+     padding: 5px;
+ }
+
+ .btn {
+     background-color: #AF1740;
+
+ }
+
+ .btn:hover {
+     background-color: transparent;
+ }
